@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Строки</title>
+</head>
+<body>
+  <script>
+  /*№1*/
+    function whitespase(str){
+      for(let i=0; i<str.lenght; i++){
+        
+      }
+    }
+  /*№2*/   
+   /*
+  const vowel = ["а","у","о","ы","э","е","ё","и","ю","я"];
+    let s = prompt('Ввод строки');
+    let count = 0; 
+    for(let value of s)
+    {
+      if(vowel.includes (value)) count++; 
+    }
+    alert("Результат - " + count);
+    */
+  </script>
+</body>
+</html>
