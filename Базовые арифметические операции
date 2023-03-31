@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Базовые арифметические операции </title>
+</head>
+<body>
+    <script>
+    
+   /* №1 */
+    
+     /*
+      let a, c, d, result;
+      a = prompt("A = ");
+      c = prompt("C = ");
+      d = prompt("D = ");
+      result = (2*c-d+Math.sqrt(23))/(a/4-1);
+      alert("Ответ = " + result);
+    */
+    
+   /* №2 */
+   
+      /*
+      let a, c, d, result;
+      a = prompt("A = ");
+      c = prompt("C = ");
+      d = prompt("D = ");
+      result = (c+4*Math.sqrt(123))/(1-a/2);
+      alert("Ответ = " + result);
+      */
+   
+   /* №3 */
+   
+      /*
+      let a, c, d, result;
+      a = prompt("A = ");
+      c = prompt("C = ");
+      d = prompt("D = ");
+      result = (-2*c+d*82)/(Math.tan(a/4-1));
+      alert("Ответ = " + result);
+      */
+      
+   /* №4 */
+   
+      let a, c, d, result;
+      a = prompt("A = ");
+      c = prompt("C = ");
+      d = prompt("D = ");
+      result = (Math.log(2*c)+d-52)/(a/4+1);
+      alert("Ответ = " + result);
+      
+    </script>
+</body>
+</html>
