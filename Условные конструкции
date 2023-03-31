@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Условные конструкции</title>
+</head>
+<body>
+  <script>
+  
+  
+     /* №1
+  
+    let number = prompt("Число = ");
+    /*
+      if(number%2==0){
+        alert('Четное');
+      }
+      else{
+        alert('Нечетное');
+       }
+   */
+    alert(number%2==0 ? 'четное' : 'нечетное');
+      */
+    
+     /* №2
+  
+   let number = prompt("Число = ");
+  let first = Math.floor(number / 10);
+  let second = number % 10;
+
+  if(first>second){
+    alert(first);
+  }
+  else if(first==second){
+    alert('одинаковые');
+  }
+ else{
+  alert(second);
+ }
+   */
+      /* №3
+   
+  let r = prompt("Число R = ");
+    let t = prompt("Число T = ");
+    let result;
+    if(t>0 && t<=1){
+     result = r**2 - Math.sin(Math.pow(r,2)+t);
+    }
+    else if(t>=0){
+      result = 0;
+    }
+    else if(t>1){
+      result = t**2 - Math.sin(Math.pow(r,2)+t);
+    }
+    alert("Результат = " + result);
+      */
+   
+       /* №4   
+   
+     let month = prompt("Номер месяца = ");
+    switch(month){
+      case "1":
+      case "2":
+      case "12":
+      alert("Зима");
+      break;
+
+      
+      case "3":
+      case "4":
+      case "5":
+      alert("Весна");
+      break;
+
+      
+      case "6":
+      case "7":
+      case "8":
+      alert("Лето");
+      break;
+
+      
+      case "9":
+      case "10":
+      case "11":
+      alert("Осень");
+      break;
+
+      default: alert("Такого нет");
+    }
+      */
+  </script>
+</body>
+</html>
