@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <script>
+
+/* №1*/ 
+
+      let m = new Array();
+      let n = prompt("Размер массива N");
+      for(let i = 0; i < n; i++){
+      m[i] = new Array();
+      for(let j = 0; j < n; j++){
+          m[i][j] = prompt(i+"  "+j);
+        }
+      }
+
+      for(let i=0; i<n; i++){
+        for(let j = 0; j< n; j++){
+          document.write(m[i][j]+" ");
+        }
+        document.write("<br>");
+      }
+       let result = 1;
+      for(let j = 0; j<n; j++){
+        for(let i = 0; i< n; i++){
+          result*= m[i][j];
+        }
+        document.write(" Произведение " +j+" столбца " + result);
+        result = 1;
+        document.write("<br>");
+      }
+
+/* №2*/
+/*  
+      document.write("<br>");
+        for(let i=0; i<n; i++){
+         for(let j = 0; j< n; j++){
+          if(i+j==n-1)
+          {
+            m[i][j] = 0;
+          }
+        
+          document.write(m[i][j]+" ");
+        }
+        document.write("<br>");
+      } 
+ */
+/* №3*/
+/* 
+        document.write("<br>");
+        for(let i= n-1; i >= 0; i--){
+        for(let j = 0; j< n; j++){
+          document.write(m[j][i]+" ");
+        }
+        document.write("<br>");
+      }
+*/
+/* №4*/
+/* 
+      document.write("<br>");
+      for(let i = n-1; i >= 0; i--){
+        for(let j = 0; j< n; j++){
+          document.write(m[i][j]+" ");
+        }
+        document.write("<br>");
+      }
+      */
+/* №5*/
+/* 
+      let flag = true;
+      document.write("<br>");
+      for(let i = n-1; i >= 0; i--){
+        if(flag)
+        {
+          for(let j = n-1; j >= 0; j--){
+          document.write(m[i][j]+" ");
+          }
+          flag = false;
+        }
+        else{
+          for(let j = 0; j < n; j++){
+          document.write(m[i][j]+" ");
+          }
+          flag = true;
+        }
+        document.write("<br>");
+      }
+      */
+    </script>
+  </body>
+</html>
