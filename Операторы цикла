@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Операторы цикла</title>
+</head>
+<body>
+  <script>
+  /*
+      /* №1  */
+    let a = prompt("A = ");
+    let b = prompt("B = ");
+    for( let i = a; i>=b; i--){
+      alert(i);
+    }
+      /* №2  */
+      
+      let n = prompt("N = ");
+    let number;
+    let count = 0;
+    for( let i = 0; i < n; i++){
+      number = prompt(i+1 + " - число");
+      if(number>5 && number<10){
+        count++;
+      }
+    }
+    alert("Результат = " + count);
+      
+      /* №3  */
+     
+         let n = prompt("N = ");
+    let number;
+    let min = prompt("1 - число");
+    for(let i = 2; i <= n; i++){
+      number = Number (prompt( i + " - число"));
+      if(number < min){
+        min = number;
+      }
+    }
+    alert("Результат = " + min);
+     
+      /* №4  */
+      
+          let n = prompt("N = ");
+    let a = prompt("A = ");
+    let result = Number(a);
+    let flag = true;
+    for(let i=2; i<=n; i++){
+       if(flag){
+         result+=Math.pow(a,i);
+         flag = false;
+        }
+        else{
+        result-=Math.pow(a,i);
+        flag = true;
+        }
+       }
+       alert("Результат = " + Number(result+1));
+      
+  */
+  </script>
+</body>
+</html>
