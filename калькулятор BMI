@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+form{
+  margin: 0 auto;
+  width: 80%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  border: 1px solid black;
+  padding: 10px;
+}
+#color{
+  width: 100% ;
+  height: 20px;
+  border: 1px solid black;
+  background: linear-gradient(to right, red ,yellow, green, yellow, red);
+}
+#range{
+  width: 100%;
+}
+  </style>
+
+  <script>
+    function calculationBMI(){
+    let weight = calculation.weight.value;
+    let growth = calculation.growth.value;
+    let bmi = weight / ((growth/100)*(growth/100));
+    document.getElementById("result").innerText = "Ваш индекс массы тела = " + bmi.toFixed(2);
+
+calculation.range.value = bmi;
+
+    if(bmi<18.5){
+      document.getElementById("category").innerText = "недостаточный вес" ;
+    }
+    else if(bmi>=18.5 && bmi<24.9){
+      document.getElementById("category").innerText = "здоровый вес" ;
+    }
+    else if(bmi>=25 && bmi<29.9){
+      document.getElementById("category").innerText = "Избыточный весс" ;
+    }
+    else {
+      document.getElementById("category").innerText = "Ожирение" ;
+    }
+  }
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <form name="calculation">
+    вес <input type ="number" id="weight" onchange="calculationBMI()"
+    value="70">
+    <hr>
+    рост <input type ="number" id="growth" onchange="calculationBMI()"
+    value="180">
+    <hr>
+    <div id="color"></div>
+    <input type ="range" id="range" disabled min="18" max="30">
+    <hr>
+    <p id="result"></p>
+    <hr>
+    <p id="category"></p>
+  </form>
+</body>
+</html>
