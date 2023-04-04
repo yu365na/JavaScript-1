@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+ 
+    /* №1 */
+
+    /*
+
+
+
+   let client = Object();
+    let next = true;
+    let i = 1;
+    while(next){
+      client[i] = Object();
+      client[i].id = i;
+      client[i].lastName = prompt("фамилия");
+      client[i].firstName = prompt("Имя");
+      client[i].middleName = prompt("Отчество");
+      client[i].age = prompt("Возраст");  
+      next = confirm("Хотите добавить ещё одного клиента?");
+      i++;  
+    }
+
+    for(let j = 1; j < i; j++){
+       if (client[j].age>=18){
+        document.write(client[j].id + "- ФИО: " +client[j].lastName+" "+client[j].firstName[0]+"."+client[j].firstName[0]+".<br>");
+       }
+    }
+
+
+    */
+
+    
+
+    /* №2 */
+
+    class Employee{
+      constructor(firstName, lastName, rate, worskDays){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.rate = rate;
+        this.worskDays = worskDays;
+
+      }
+
+      getSalary(){
+        return this.rate * this.worskDays;
+
+      }
+    }
+    person1 = new Employee("Андрей", "Иванов", 7000, 20);
+    alert(person1.getSalary()+ "рублей");
+
+
+
+  </script>
+</body>
+</html>
