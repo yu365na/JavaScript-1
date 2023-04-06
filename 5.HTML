@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<title>Document</title>
+<script src="script.js"></script>
+<style>
+
+  .flex-container{
+    display: flex;
+    background-color: blueviolet;
+    height: 100%;
+    padding: 15px;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+  
+      }
+      .flex-container>div{
+        background-color: chartreuse;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 5px;
+        
+      }
+</style>
+</head>
+<body>
+  <div class="flex-container">
+    <div>
+      <h4 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  text-align:center; color: blueviolet;">Фильтры для фото</h4>
+      <input type="radio" name="filterButton" id="blurButton" onclick="filterStyle()"> Размытие <br>
+      <input type="radio" name="filterButton" id="brightnessButton" onclick="filterStyle()"> Ярокость<br>
+      <input type="radio" name="filterButton" id="contrastButton" onclick="filterStyle()"> Котраст<br>
+      <input type="radio" name="filterButton" id="grayscaleButton" onclick="filterStyle()"> Оттенки серого<br>
+      <input type="radio" name="filterButton" id="hueRotateButton" onclick="filterStyle()"> Оттенок-поворот<br>
+      <input type="radio" name="filterButton" id="invertButton" onclick="filterStyle()"> Иверсия<br>
+      <input type="radio" name="filterButton" id="opacityButton" onclick="filterStyle()"> Непрозрачность<br>
+      <input type="radio" name="filterButton" id="saturateButton" onclick="filterStyle()"> Насыщенность<br>
+      <input type="radio" name="filterButton" id="sepiaButton" onclick="filterStyle()"> Сепия<br>
+      <input type="range" id="rangeInput" min="0" max="100" value="0" onchange="filterStyle()"><br>
+      <h4 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  text-align:center; color: blueviolet;">Размер фото</h4>
+      <input type="number" id="sizeImage" value="100" onchange="changeSize()"><br>
+    </div>
+    <div>
+      <h4 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  text-align:center; color: blueviolet;">Ваше фото</h4>
+      <img src="photo.jpg" width="100%">
+    </div>
+  </div>
+  
+  
+</body>
+</html>
